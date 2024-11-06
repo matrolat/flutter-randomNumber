@@ -60,7 +60,7 @@ class _MainAppState extends State<MainApp> {
               case ConnectionState.done:
                 if(snapshot.hasData)
                 {
-                  return Text("${snapshot.data}");
+                  return Text("${snapshot.data}",style: TextStyle(fontSize: 30),);
                 }
               default:
                 return CircularProgressIndicator();
@@ -69,9 +69,9 @@ class _MainAppState extends State<MainApp> {
             }
 
 
-            if (snapshot.hasData) {
-              return Text("${snapshot.data}");
-            }
+            // if (snapshot.hasData) {
+            //   return Text("${snapshot.data}",style: TextStyle(fontSize: 60),);
+            // }
 
             return Text("Waiting");
           },
